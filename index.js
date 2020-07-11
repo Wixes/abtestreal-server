@@ -8,6 +8,6 @@ const app = express();
 app.use(cors());
 app.use('/api', routes);
 
-app.listen(4000, () => {
+app.listen(process.env.PORT || 3000, () => {
     console.log('server is listening');
 });
