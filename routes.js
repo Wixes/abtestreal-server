@@ -23,8 +23,8 @@ router.get('/', async (req, res) => {
 });
 
 const processData = (data) => {
-    var firstColumn = [];
-    var secondColumn = [];
+    let firstColumn = [];
+    let secondColumn = [];
 
     const nestedArray = (data) => {
         Object.keys(data).forEach(key => {
